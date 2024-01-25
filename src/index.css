@@ -26,6 +26,12 @@ main {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 500px) {
+  .main {
+      width: 100%;
+  }
+}
+
 .svg-container-upper {
   position: absolute; 
   top: 0; 
