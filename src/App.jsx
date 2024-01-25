@@ -189,7 +189,7 @@ function App() {
                       </select>
                     </div>
                     <div id='error-text'></div>
-                    <button className='start-button' onClick={startQuiz}>Start quiz</button>
+                    <button className='control-button' onClick={startQuiz}>Start quiz</button>
                   </div>
               </div>
             </>
@@ -201,8 +201,8 @@ function App() {
                 {questionElements}
               </div>
               <div className='control-strip'>
-                {!checkAnswers && <button className='checkAnswers' onClick={handleCheckAnswers}>Check answers</button>}
-                {checkAnswers && <><h3>You scored { getResultsText()} correct answers</h3><button className='playAgain' onClick={handlePlayAgain}>Play again</button></>}
+                {!checkAnswers && <button className='control-button' onClick={handleCheckAnswers}>Check answers</button>}
+                {checkAnswers && <><h3>You scored { getResultsText()} correct answers</h3><button className='control-button' onClick={handlePlayAgain}>Play again</button></>}
               </div>
             </>
         }

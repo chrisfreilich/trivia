@@ -118,18 +118,6 @@ h1 {
   max-width: 600px;
 }
 
-.control-strip button {
-  background-color: #4D5B9E;
-  color: #F5F7FB;
-  font-family: Inter;
-  font-size: 10px;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  margin: 0;
-}
-
 .control-strip h3 {
   font-family: Inter;
   font-size: 13px;
@@ -138,9 +126,9 @@ h1 {
   margin: 0 15px 0 0;
 }
 
-/* Front (options) page */
 
-.start-button {
+/* All buttons except for multiple choice answers */
+.control-button {
   background-color: #4D5B9E;
   color: white;
   padding: 10px 40px;
@@ -154,15 +142,17 @@ h1 {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
 }
 
-.start-button:hover, .start-button:active  {
+.control-button:hover, .start-button:active  {
   background-color: hsl(230, 34%, 36%)
 }
 
-.start-button:active {
+.control-button:active {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.35);
-  transform: translateY(2px);
+  transform: translateY(1px);
   transform: translateX(1px);
 }
+
+/* Front (options) page */
 
 .setup-container {
   display: flex;
@@ -218,6 +208,7 @@ h1 {
 }
 
 .title h2 {
+  font-family: 'Syncopate', sans-serif;
 	width: 12rem;
 	height: 12rem;
 	position: relative;

@@ -4,7 +4,7 @@ function Question({setCorrect, checkAnswers, id, question, answer, wrong}) {
 
   // Props
   // function setCorrect :: tell App is the current answer correct?
-  // boolean check :: check answer?
+  // boolean checkAnswers :: check answers?
   // integer id :: unique id for question, will be the array index of the results array in App
   // string question :: trivia question
   // string answer :: correct answer
