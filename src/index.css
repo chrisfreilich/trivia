@@ -26,16 +26,6 @@ main {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 500px) {
-  main {
-      width: 100%;
-  }
-  .option {
-    min-width: 50px;
-    margin: 15px 10px 15px 0;
-  }
-}
-
 .svg-container-upper {
   position: absolute; 
   top: 0; 
@@ -86,10 +76,13 @@ h1 {
   font-size: 10px;
   font-weight: 500;
   line-height: 12px;
-  letter-spacing: 0em;
   text-align: center;
   padding: 5px;
   min-width: 60px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  flex: 1 1 auto;
 }
 
 .option.user-option {
@@ -256,4 +249,20 @@ h1 {
 	&:nth-child(12) { --units: 12; }
 	&:nth-child(13) { --units: 13; }
   &:nth-child(14) { --units: 14; }
+}
+
+/* Media queries - responsiveness */
+
+@media (max-width: 500px) {
+  main {
+      width: 100%;
+  }
+  .option {
+    min-width:min-content;
+    margin: 15px 3px 15px 0;
+    padding: 5px 2px;
+  }
+  hr {
+    width: 300px;
+  }
 }
